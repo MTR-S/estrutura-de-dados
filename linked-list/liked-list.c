@@ -29,6 +29,10 @@ Node * insert_end(Node ** head, int value);
 Node * insert_specific_position(Node ** head, int value, int position);
 Node * insert_in_order(Node ** head, int value);
 
+int traversal(Node ** head);
+Node * searching(Node ** head, int value);
+int lenght(Node **head);
+
 int main() {
     Node * head = NULL;
 
@@ -36,11 +40,24 @@ int main() {
     insert_beginning(&head, 2);
 
 
-    printf("Valor = %d", (insert_end(&head, 0))->value);
+    insert_end(&head, 0);
 
-    insert_specific_position(&head, 3, 5);
+    insert_specific_position(&head, 3, 1);
 
     insert_in_order(&head, -1);
+
+    //if for a null list
+    traversal(&head);
+
+    Node * nodeSearched = searching(&head, -1);
+    if(nodeSearched == NULL) {
+        printf("Node not founded!");
+
+        return 1;
+    }
+    printf("Node founded!! Value = %d\n", nodeSearched->value);
+
+    printf("Linked List lenght = %d\n", lenght(&head));
 }
 
 Node * insert_beginning(Node ** head, int value) {
@@ -149,4 +166,41 @@ Node * insert_in_order(Node ** head, int value) {
     newNode->nextNode = headAssistant;
 
     return newNode;
+}
+
+int traversal(Node ** head) {
+    Node * headTemporary = *head;
+
+    int nodePosition = 1;
+    while(headTemporary != NULL) {
+        printf("(%d) Node value = %d\n", nodePosition, headTemporary->value);
+
+        headTemporary = headTemporary->nextNode;
+        nodePosition++;
+    }
+
+    return nodePosition;
+}
+
+Node * searching(Node ** head, int value) {
+    Node * headTemporary = *head;
+
+    while(headTemporary != NULL && headTemporary->value != value) {
+        headTemporary = headTemporary->nextNode;
+    }
+
+    return headTemporary;
+}
+
+int lenght(Node **head) {
+    int lenghtCounter = 0;
+    Node * headTemporary = *head;
+
+    while(headTemporary != NULL) {
+        headTemporary = headTemporary->nextNode;
+
+        lenghtCounter++;
+    }
+
+    return lenghtCounter;
 }

@@ -4,6 +4,6 @@ project(estrutura_de_dados C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(estrutura_de_dados
-        linked-list/liked-list.c
+        linked-list/singly-liked-list.c
         linked-list/singly-linked-list.h
 )

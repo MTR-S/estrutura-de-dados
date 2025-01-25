@@ -16,49 +16,8 @@
         ii) Delete from the end;
         iii) Delete a specific node.
  */
-#include <stdio.h>
-#include <stdlib.h>
 
-typedef struct node {
-    int value;
-    struct node * nextNode;
-}Node;
-
-Node * insert_beginning(Node ** head, int value);
-Node * insert_end(Node ** head, int value);
-Node * insert_specific_position(Node ** head, int value, int position);
-Node * insert_in_order(Node ** head, int value);
-
-int traversal(Node ** head);
-Node * searching(Node ** head, int value);
-int lenght(Node **head);
-
-int main() {
-    Node * head = NULL;
-
-    insert_beginning(&head, 1);
-    insert_beginning(&head, 2);
-
-
-    insert_end(&head, 0);
-
-    insert_specific_position(&head, 3, 1);
-
-    insert_in_order(&head, -1);
-
-    //if for a null list
-    traversal(&head);
-
-    Node * nodeSearched = searching(&head, -1);
-    if(nodeSearched == NULL) {
-        printf("Node not founded!");
-
-        return 1;
-    }
-    printf("Node founded!! Value = %d\n", nodeSearched->value);
-
-    printf("Linked List lenght = %d\n", lenght(&head));
-}
+#include "singly-linked-list.h"
 
 Node * insert_beginning(Node ** head, int value) {
     Node * newNode = (Node *) malloc(sizeof(typeof(Node)));
@@ -203,4 +162,69 @@ int lenght(Node **head) {
     }
 
     return lenghtCounter;
+}
+
+Node * delete_beginning(Node ** head) {
+    if(*head == NULL) {
+        return NULL;
+    }
+
+    Node * headTemporary = *head;
+    *head = (*head)->nextNode;
+
+    free(headTemporary);
+
+    return *head;
+}
+
+Node * delete_end(Node ** head) {
+    if(*head == NULL) {
+        return NULL;
+    }
+
+    if((*head)->nextNode == NULL) {
+        free(*head);
+        *head = NULL;
+
+        return NULL;
+    }
+
+    Node * headTemporary = *head;
+    while(headTemporary->nextNode->nextNode != NULL) {
+        headTemporary = headTemporary->nextNode;
+    }
+
+    free(headTemporary->nextNode);
+    headTemporary->nextNode = NULL;
+
+    return *head;
+}
+
+Node * delete_specific_node(Node ** head, int value) {
+    if(*head == NULL) {
+        return NULL;
+    }
+
+    if((*head)->value == value) {
+        free(*head);
+        *head = NULL;
+
+        return *head;
+    }
+
+    Node * headTemporary = *head;
+    while(headTemporary->nextNode->value != value && headTemporary->nextNode->nextNode != NULL) {
+        headTemporary = headTemporary->nextNode;
+    }
+
+    if(headTemporary->nextNode->nextNode == NULL) {
+        return NULL;
+    }
+
+    Node * storeDeletedNode = headTemporary->nextNode;
+    headTemporary->nextNode = headTemporary->nextNode->nextNode;
+
+    free(storeDeletedNode);
+
+    return *head;
 }

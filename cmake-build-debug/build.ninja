@@ -49,14 +49,8 @@ cmake_ninja_workdir = C$:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-d
 
 build cmake_object_order_depends_target_estrutura_de_dados: phony || CMakeFiles/estrutura_de_dados.dir
 
-build CMakeFiles/estrutura_de_dados.dir/linked-list/liked-list.c.obj: C_COMPILER__estrutura_de_dados_unscanned_Debug C$:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/estrutura-de-dados/linked-list/liked-list.c || cmake_object_order_depends_target_estrutura_de_dados
-  DEP_FILE = CMakeFiles\estrutura_de_dados.dir\linked-list\liked-list.c.obj.d
-  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\estrutura_de_dados.dir
-  OBJECT_FILE_DIR = CMakeFiles\estrutura_de_dados.dir\linked-list
-
-build CMakeFiles/estrutura_de_dados.dir/linked-list/main.c.obj: C_COMPILER__estrutura_de_dados_unscanned_Debug C$:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/estrutura-de-dados/linked-list/main.c || cmake_object_order_depends_target_estrutura_de_dados
-  DEP_FILE = CMakeFiles\estrutura_de_dados.dir\linked-list\main.c.obj.d
+build CMakeFiles/estrutura_de_dados.dir/linked-list/singly-liked-list.c.obj: C_COMPILER__estrutura_de_dados_unscanned_Debug C$:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/estrutura-de-dados/linked-list/singly-liked-list.c || cmake_object_order_depends_target_estrutura_de_dados
+  DEP_FILE = CMakeFiles\estrutura_de_dados.dir\linked-list\singly-liked-list.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\estrutura_de_dados.dir
   OBJECT_FILE_DIR = CMakeFiles\estrutura_de_dados.dir\linked-list
@@ -69,7 +63,7 @@ build CMakeFiles/estrutura_de_dados.dir/linked-list/main.c.obj: C_COMPILER__estr
 #############################################
 # Link the executable estrutura_de_dados.exe
 
-build estrutura_de_dados.exe: C_EXECUTABLE_LINKER__estrutura_de_dados_Debug CMakeFiles/estrutura_de_dados.dir/linked-list/liked-list.c.obj CMakeFiles/estrutura_de_dados.dir/linked-list/main.c.obj
+build estrutura_de_dados.exe: C_EXECUTABLE_LINKER__estrutura_de_dados_Debug CMakeFiles/estrutura_de_dados.dir/linked-list/singly-liked-list.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\estrutura_de_dados.dir

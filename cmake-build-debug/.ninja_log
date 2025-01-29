@@ -1,10 +1,6 @@
 # ninja log v5
 1	700	7594336935643149	CMakeFiles/estrutura_de_dados.dir/main.c.obj	59900ab91781bbfb
-446	847	7595205498494220	estrutura_de_dados.exe	362470dd346d1048
-3	445	7595205494354255	CMakeFiles/estrutura_de_dados.dir/linked-list/liked-list.c.obj	c7b60aa613dab67d
-3	1897	7595207922960909	build.ninja	cf044e400262a685
-23	422	7595208663434604	CMakeFiles/estrutura_de_dados.dir/linked-list/main.c.obj	9e8990325701f913
-5	437	7595208663934599	CMakeFiles/estrutura_de_dados.dir/linked-list/liked-list.c.obj	c7b60aa613dab67d
-4	216	7595209523647813	CMakeFiles/estrutura_de_dados.dir/linked-list/main.c.obj	9e8990325701f913
-3	195	7595209953560161	CMakeFiles/estrutura_de_dados.dir/linked-list/liked-list.c.obj	c7b60aa613dab67d
 196	455	7595209956068923	estrutura_de_dados.exe	2ab06e047199b469
+3	195	7595209953560161	CMakeFiles/estrutura_de_dados.dir/linked-list/liked-list.c.obj	c7b60aa613dab67d
+3	1897	7598627580031406	build.ninja	cf044e400262a685
+4	216	7595209523647813	CMakeFiles/estrutura_de_dados.dir/linked-list/main.c.obj	9e8990325701f913

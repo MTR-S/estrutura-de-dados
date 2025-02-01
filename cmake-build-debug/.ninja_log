@@ -1,6 +1,20 @@
 # ninja log v5
 1	700	7594336935643149	CMakeFiles/estrutura_de_dados.dir/main.c.obj	59900ab91781bbfb
-196	455	7595209956068923	estrutura_de_dados.exe	2ab06e047199b469
+283	781	7601331010937047	estrutura_de_dados.exe	d0672fb6ab9ece6
 3	195	7595209953560161	CMakeFiles/estrutura_de_dados.dir/linked-list/liked-list.c.obj	c7b60aa613dab67d
-3	1897	7598627580031406	build.ninja	cf044e400262a685
+3	1897	7601334297393327	build.ninja	cf044e400262a685
+20	651	7598639585849208	CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.obj	944125eeee7d6405
+5	282	7601331006741329	CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj	e852896b98c0d414
 4	216	7595209523647813	CMakeFiles/estrutura_de_dados.dir/linked-list/main.c.obj	9e8990325701f913
+3	304	7601336878238591	CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj	e852896b98c0d414
+305	652	7601336881520808	estrutura_de_dados.exe	d0672fb6ab9ece6
+3	266	7601337561614527	CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj	e852896b98c0d414
+267	583	7601337564774504	estrutura_de_dados.exe	d0672fb6ab9ece6
+50	681	7601338860072393	CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj	e852896b98c0d414
+682	980	7601338863209237	estrutura_de_dados.exe	d0672fb6ab9ece6
+8	443	7601341005034872	CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj	e852896b98c0d414
+444	712	7601341007731756	estrutura_de_dados.exe	d0672fb6ab9ece6
+4	572	7601348897770661	CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj	e852896b98c0d414
+573	894	7601348900830656	estrutura_de_dados.exe	d0672fb6ab9ece6
+5	308	7601349106214953	CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj	e852896b98c0d414
+309	597	7601349109115745	estrutura_de_dados.exe	d0672fb6ab9ece6

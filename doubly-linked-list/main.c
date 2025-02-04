@@ -27,6 +27,10 @@ typedef struct node {;
     struct node * next;
 } Node;
 
+void transversal_dl(Node ** head);
+Node * search_dl(Node ** head, int data);
+int lenght_dl(Node ** head);
+
 Node * insert_beginning_dl(Node ** head, Node ** tail, int data);
 Node * insert_end_dl(Node **head, Node **tail, int data);
 Node * tail_insert_end_dl(Node **head, Node ** tail, int data);
@@ -38,11 +42,55 @@ int main() {
 
     insert_beginning_dl(&head, &tail, 13);
     insert_beginning_dl(&head, &tail, 23);
-    insert_end_dl(&head, &tail, 15);
-    tail_insert_end_dl(&head, &tail, 300);
+    //insert_end_dl(&head, &tail, 15);
+    //tail_insert_end_dl(&head, &tail, 300);
     insert_specific_position_dl(&head, &tail, 100, 2);
 
+    transversal_dl(&head);
+
+    printf("Node founded data = %d\n", search_dl(&head, 13)->data);
+    printf("Doubly Linked List Lenght = %d", lenght_dl(&head));
+
     return 0;
+}
+
+void transversal_dl(Node ** head) {
+    Node * headSupport = *head;
+
+    int counter = 1;
+    while (headSupport != NULL) {
+        printf("Node (%d) = %d\n", counter, headSupport->data);
+
+        headSupport = headSupport->next;
+        counter++;
+    }
+}
+
+Node * search_dl(Node ** head, int data) {
+    Node * headSupport = *head;
+
+    while (headSupport->data != data && headSupport != NULL) {
+        headSupport = headSupport->next;
+    }
+
+    return  headSupport ;
+}
+
+int lenght_dl(Node ** head) {
+    if (*head == NULL) {
+        return 0;
+    }
+
+    Node * headSupport = *head;
+    int counter = 0;
+
+    while (headSupport  != NULL) {
+        headSupport = headSupport->next;
+
+        counter++;
+    }
+
+    return  counter;
 }
 
 Node * insert_beginning_dl(Node ** head, Node ** tail, int data) {
@@ -177,9 +225,13 @@ Node * insert_specific_position_dl(Node ** head, Node ** tail, int data, int pos
         return NULL;
     }
 
+    newNode->next = headTemporary->next;
     headTemporary->next = newNode;
     newNode->prev = headTemporary;
-    newNode->next = NULL;
+
+    if (newNode->next != NULL) {
+        newNode->next->prev= newNode;
+    }
 
     return newNode;
 }

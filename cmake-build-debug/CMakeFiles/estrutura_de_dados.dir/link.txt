@@ -1,0 +1,1 @@
+/usr/bin/cc -g "CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.o" "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.o" -o estrutura_de_dados

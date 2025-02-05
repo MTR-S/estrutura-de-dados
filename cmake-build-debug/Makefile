@@ -128,6 +128,30 @@ estrutura_de_dados/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\estrutura_de_dados.dir\build.make CMakeFiles/estrutura_de_dados.dir/build
 .PHONY : estrutura_de_dados/fast
 
+binary-tree/main.obj: binary-tree/main.c.obj
+.PHONY : binary-tree/main.obj
+
+# target to build an object file
+binary-tree/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\estrutura_de_dados.dir\build.make CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.obj
+.PHONY : binary-tree/main.c.obj
+
+binary-tree/main.i: binary-tree/main.c.i
+.PHONY : binary-tree/main.i
+
+# target to preprocess a source file
+binary-tree/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\estrutura_de_dados.dir\build.make CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.i
+.PHONY : binary-tree/main.c.i
+
+binary-tree/main.s: binary-tree/main.c.s
+.PHONY : binary-tree/main.s
+
+# target to generate assembly for a file
+binary-tree/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\estrutura_de_dados.dir\build.make CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.s
+.PHONY : binary-tree/main.c.s
+
 doubly-linked-list/doubly-linked-list.obj: doubly-linked-list/doubly-linked-list.c.obj
 .PHONY : doubly-linked-list/doubly-linked-list.obj
 
@@ -151,30 +175,6 @@ doubly-linked-list/doubly-linked-list.s: doubly-linked-list/doubly-linked-list.c
 doubly-linked-list/doubly-linked-list.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\estrutura_de_dados.dir\build.make CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.s
 .PHONY : doubly-linked-list/doubly-linked-list.c.s
-
-doubly-linked-list/main.obj: doubly-linked-list/main.c.obj
-.PHONY : doubly-linked-list/main.obj
-
-# target to build an object file
-doubly-linked-list/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\estrutura_de_dados.dir\build.make CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj
-.PHONY : doubly-linked-list/main.c.obj
-
-doubly-linked-list/main.i: doubly-linked-list/main.c.i
-.PHONY : doubly-linked-list/main.i
-
-# target to preprocess a source file
-doubly-linked-list/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\estrutura_de_dados.dir\build.make CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.i
-.PHONY : doubly-linked-list/main.c.i
-
-doubly-linked-list/main.s: doubly-linked-list/main.c.s
-.PHONY : doubly-linked-list/main.s
-
-# target to generate assembly for a file
-doubly-linked-list/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\estrutura_de_dados.dir\build.make CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.s
-.PHONY : doubly-linked-list/main.c.s
 
 singly-linked-list/singly-liked-list.obj: singly-linked-list/singly-liked-list.c.obj
 .PHONY : singly-linked-list/singly-liked-list.obj
@@ -209,12 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... estrutura_de_dados
+	@echo ... binary-tree/main.obj
+	@echo ... binary-tree/main.i
+	@echo ... binary-tree/main.s
 	@echo ... doubly-linked-list/doubly-linked-list.obj
 	@echo ... doubly-linked-list/doubly-linked-list.i
 	@echo ... doubly-linked-list/doubly-linked-list.s
-	@echo ... doubly-linked-list/main.obj
-	@echo ... doubly-linked-list/main.i
-	@echo ... doubly-linked-list/main.s
 	@echo ... singly-linked-list/singly-liked-list.obj
 	@echo ... singly-linked-list/singly-liked-list.i
 	@echo ... singly-linked-list/singly-liked-list.s

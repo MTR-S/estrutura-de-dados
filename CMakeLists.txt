@@ -8,4 +8,5 @@ add_executable(estrutura_de_dados
         singly-linked-list/singly-linked-list.h
         doubly-linked-list/doubly-linked-list.c
         doubly-linked-list/doubly-linked-list.h
+        binary-tree/main.c
 )

@@ -82,24 +82,10 @@ CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\singly-linked-list\singly-liked-list.c -o CMakeFiles\estrutura_de_dados.dir\singly-linked-list\singly-liked-list.c.s
 
-CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj: CMakeFiles/estrutura_de_dados.dir/flags.make
-CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj: C:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/doubly-linked-list/main.c
-CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj: CMakeFiles/estrutura_de_dados.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj -MF CMakeFiles\estrutura_de_dados.dir\doubly-linked-list\main.c.obj.d -o CMakeFiles\estrutura_de_dados.dir\doubly-linked-list\main.c.obj -c C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\doubly-linked-list\main.c
-
-CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\doubly-linked-list\main.c > CMakeFiles\estrutura_de_dados.dir\doubly-linked-list\main.c.i
-
-CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\doubly-linked-list\main.c -o CMakeFiles\estrutura_de_dados.dir\doubly-linked-list\main.c.s
-
 CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj: CMakeFiles/estrutura_de_dados.dir/flags.make
 CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj: C:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/doubly-linked-list/doubly-linked-list.c
 CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj: CMakeFiles/estrutura_de_dados.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj -MF CMakeFiles\estrutura_de_dados.dir\doubly-linked-list\doubly-linked-list.c.obj.d -o CMakeFiles\estrutura_de_dados.dir\doubly-linked-list\doubly-linked-list.c.obj -c C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\doubly-linked-list\doubly-linked-list.c
 
 CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.i: cmake_force
@@ -110,18 +96,32 @@ CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\doubly-linked-list\doubly-linked-list.c -o CMakeFiles\estrutura_de_dados.dir\doubly-linked-list\doubly-linked-list.c.s
 
+CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.obj: CMakeFiles/estrutura_de_dados.dir/flags.make
+CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.obj: C:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/binary-tree/main.c
+CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.obj: CMakeFiles/estrutura_de_dados.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.obj -MF CMakeFiles\estrutura_de_dados.dir\binary-tree\main.c.obj.d -o CMakeFiles\estrutura_de_dados.dir\binary-tree\main.c.obj -c C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\binary-tree\main.c
+
+CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\binary-tree\main.c > CMakeFiles\estrutura_de_dados.dir\binary-tree\main.c.i
+
+CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Casa\IFCE-EngenhariaComputacao-S3\estrutura-de-dados\binary-tree\main.c -o CMakeFiles\estrutura_de_dados.dir\binary-tree\main.c.s
+
 # Object files for target estrutura_de_dados
 estrutura_de_dados_OBJECTS = \
 "CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.obj" \
-"CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj" \
-"CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj"
+"CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj" \
+"CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.obj"
 
 # External object files for target estrutura_de_dados
 estrutura_de_dados_EXTERNAL_OBJECTS =
 
 estrutura_de_dados.exe: CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.obj
-estrutura_de_dados.exe: CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj
 estrutura_de_dados.exe: CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj
+estrutura_de_dados.exe: CMakeFiles/estrutura_de_dados.dir/binary-tree/main.c.obj
 estrutura_de_dados.exe: CMakeFiles/estrutura_de_dados.dir/build.make
 estrutura_de_dados.exe: CMakeFiles/estrutura_de_dados.dir/linkLibs.rsp
 estrutura_de_dados.exe: CMakeFiles/estrutura_de_dados.dir/objects1.rsp

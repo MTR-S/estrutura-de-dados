@@ -15,7 +15,8 @@
     3) Deletion:
         i) Delete from the beginning;
         ii) Delete from the end;
-        iii) Delete a specific node.
+        iii) Delete from the end with tail;
+        iv) Delete a specific node.
  */
 
 #include <stdio.h>
@@ -39,31 +40,9 @@ Node * insert_specific_position_dl(Node ** head, Node ** tail, int data, int pos
 Node * delete_beginning_dl(Node **head, Node ** tail);
 Node * delete_end_dl(Node **head, Node ** tail);
 Node * tail_delete_end_dl(Node **head, Node ** tail);
+Node * delete_specific_node_dl(Node **head, Node ** tail, int data);
 
 int main() {
-    Node * head = NULL;
-    Node * tail = NULL;
-
-    insert_beginning_dl(&head, &tail, 13);
-    insert_beginning_dl(&head, &tail, 23);
-    //insert_end_dl(&head, &tail, 15);
-    //tail_insert_end_dl(&head, &tail, 300);
-    insert_specific_position_dl(&head, &tail, 100, 2);
-
-    transversal_dl(&head);
-
-    printf("Node founded data = %d\n", search_dl(&head, 13)->data);
-    printf("Doubly Linked List Lenght = %d\n", lenght_dl(&head));
-
-    //delete_beginning_dl(&head, &tail);
-
-    //tail_delete_end_dl(&head, &tail);
-    delete_end_dl(&head, &tail);
-    delete_end_dl(&head, &tail);
-    delete_end_dl(&head, &tail);
-
-
-    transversal_dl(&head);
 
     return 0;
 }
@@ -271,17 +250,20 @@ Node * delete_end_dl(Node **head, Node ** tail) {
     }
 
     Node * headSupport = *head;
-    while (headSupport->next != NULL) {
+    while(headSupport->next != NULL) {
         headSupport = headSupport->next;
     }
 
-    Node * nodeToBeDeleted = headSupport;
+    if(headSupport->prev == NULL) {
+        free(headSupport);
+        *tail = NULL;
+        *head = NULL;
 
-    if (headSupport->prev != NULL) {
-        headSupport->prev->next = NULL;
+        return *head;
     }
 
-    *tail = headSupport->prev;
+    Node * nodeToBeDeleted = headSupport;
+    headSupport->prev->next = NULL;
 
     free(nodeToBeDeleted);
 
@@ -301,4 +283,44 @@ Node * tail_delete_end_dl(Node **head, Node ** tail) {
     free(nodeToBeDeleted);
 
     return *tail;
+}
+
+Node * delete_specific_node_dl(Node **head, Node ** tail, int data) {
+    if(*head == NULL) {
+        return NULL;
+    }
+
+    Node * headSupport = *head;
+    while(headSupport != NULL && headSupport->data != data) {
+        headSupport = headSupport->next;
+    }
+
+    if(headSupport == NULL) {
+        return NULL;
+    }
+
+    Node * nodeToBeDeleted = headSupport;
+
+    if(headSupport->prev == NULL && headSupport->next == NULL) {
+        *head = NULL;
+        *tail = NULL;
+    }
+    else if(headSupport->prev == NULL) {
+        *head = headSupport->next;
+        headSupport->next->prev = NULL;
+    }
+
+    else if(headSupport->next == NULL) {
+        *tail = headSupport->prev;
+        headSupport->prev->next = NULL;
+    }
+
+    else {
+        headSupport->prev->next = headSupport->next;
+        headSupport->next->prev = headSupport->prev;
+    }
+
+    free(nodeToBeDeleted);
+
+    return *head;
 }

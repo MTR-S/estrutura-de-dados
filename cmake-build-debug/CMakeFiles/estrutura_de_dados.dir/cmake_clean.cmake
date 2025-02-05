@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.o"
-  "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.o.d"
-  "CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.o"
-  "CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.o.d"
-  "estrutura_de_dados"
+  "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj"
+  "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj.d"
+  "CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.obj"
+  "CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.obj.d"
+  "estrutura_de_dados.exe"
+  "estrutura_de_dados.exe.manifest"
   "estrutura_de_dados.pdb"
+  "libestrutura_de_dados.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

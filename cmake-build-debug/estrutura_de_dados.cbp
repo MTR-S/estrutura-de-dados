@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/doubly-linked-list/doubly-linked-list.c">
+			<Option target="estrutura_de_dados"/>
+		</Unit>
+		<Unit filename="C:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/doubly-linked-list/doubly-linked-list.h">
+			<Option target="estrutura_de_dados"/>
+		</Unit>
 		<Unit filename="C:/Users/Casa/IFCE-EngenhariaComputacao-S3/estrutura-de-dados/doubly-linked-list/main.c">
 			<Option target="estrutura_de_dados"/>
 		</Unit>

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj"
+  "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/doubly-linked-list.c.obj.d"
   "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj"
   "CMakeFiles/estrutura_de_dados.dir/doubly-linked-list/main.c.obj.d"
   "CMakeFiles/estrutura_de_dados.dir/singly-linked-list/singly-liked-list.c.obj"

@@ -36,6 +36,10 @@ Node * insert_end_dl(Node **head, Node **tail, int data);
 Node * tail_insert_end_dl(Node **head, Node ** tail, int data);
 Node * insert_specific_position_dl(Node ** head, Node ** tail, int data, int position);
 
+Node * delete_beginning_dl(Node **head, Node ** tail);
+Node * delete_end_dl(Node **head, Node ** tail);
+Node * tail_delete_end_dl(Node **head, Node ** tail);
+
 int main() {
     Node * head = NULL;
     Node * tail = NULL;
@@ -49,7 +53,17 @@ int main() {
     transversal_dl(&head);
 
     printf("Node founded data = %d\n", search_dl(&head, 13)->data);
-    printf("Doubly Linked List Lenght = %d", lenght_dl(&head));
+    printf("Doubly Linked List Lenght = %d\n", lenght_dl(&head));
+
+    //delete_beginning_dl(&head, &tail);
+
+    //tail_delete_end_dl(&head, &tail);
+    delete_end_dl(&head, &tail);
+    delete_end_dl(&head, &tail);
+    delete_end_dl(&head, &tail);
+
+
+    transversal_dl(&head);
 
     return 0;
 }
@@ -234,4 +248,57 @@ Node * insert_specific_position_dl(Node ** head, Node ** tail, int data, int pos
     }
 
     return newNode;
+}
+
+Node * delete_beginning_dl(Node **head, Node ** tail) {
+    if(*head == NULL) {
+        return NULL;
+    }
+
+    Node * nodeTOBeDeleted = *head;
+
+    *head = (*head)->next;
+    (*head)->prev = NULL;
+
+    free(nodeTOBeDeleted);
+
+    return *head;
+}
+
+Node * delete_end_dl(Node **head, Node ** tail) {
+    if(*head == NULL) {
+        return NULL;
+    }
+
+    Node * headSupport = *head;
+    while (headSupport->next != NULL) {
+        headSupport = headSupport->next;
+    }
+
+    Node * nodeToBeDeleted = headSupport;
+
+    if (headSupport->prev != NULL) {
+        headSupport->prev->next = NULL;
+    }
+
+    *tail = headSupport->prev;
+
+    free(nodeToBeDeleted);
+
+    return *head;
+}
+
+Node * tail_delete_end_dl(Node **head, Node ** tail) {
+    if(*head == NULL) {
+        return NULL;
+    }
+
+    Node * nodeToBeDeleted = *tail;
+
+    *tail = nodeToBeDeleted->prev;
+    (*tail)->next = NULL;
+
+    free(nodeToBeDeleted);
+
+    return *tail;
 }
